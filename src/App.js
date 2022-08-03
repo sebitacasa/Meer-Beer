@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import MenuAppBar from './component/navBar';
+import Example from './component/carousel';
+import CenteredFooter from './component/footer';
+import Index from './component/skeleton'
+import MyForm from './component/form';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MenuAppBar/>
+      <Example/>
+      <CenteredFooter/>
+    
     </div>
   );
 }
