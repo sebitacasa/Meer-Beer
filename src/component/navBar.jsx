@@ -49,7 +49,7 @@ const ResponsiveAppBar = () => {
       backgroundColor: "#000000"
     },
     abStatic: {
-      border: "solid blue 5px"
+      border: "solid red 5px"
     }
   })
   );
@@ -119,8 +119,8 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem style={{color: "white"}} key={page} onClick={handleCloseNavMenu}>
+                  <Typography color="common.white" textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -149,12 +149,12 @@ const ResponsiveAppBar = () => {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            {/* <Tooltip title="Open settings">
+          {/* <Box sx={{ flexGrow: 0 }}>
+            <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
-            </Tooltip> */}
+            </Tooltip> 
                <PopupState variant="popover" popupId="demo-popup-menu">
       {(popupState) => (
         <React.Fragment>
@@ -191,7 +191,7 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
