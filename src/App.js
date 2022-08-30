@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import MenuAppBar from './component/navBar';
 import Example from './component/carousel';
 import CenteredFooter from './component/footer';
+import RowAndColumnSpacing from './component/gridContainer';
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <div >
       <MenuAppBar/>
       <Example/>
+      <RowAndColumnSpacing/>
       <CenteredFooter/>
      
     
