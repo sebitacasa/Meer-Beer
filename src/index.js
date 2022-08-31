@@ -7,9 +7,11 @@ import { StyledEngineProvider } from "@mui/material/styles";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StyledEngineProvider injectFirst>
-  <App />
-</StyledEngineProvider>,
+  <React.StrictMode>
+
+    <App />
+  </React.StrictMode>
+//</StyledEngineProvider>,
 );
 
 // If you want to start measuring performance in your app, pass a function

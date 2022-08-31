@@ -1,19 +1,24 @@
-import logo from './logo.svg';
 
-import MenuAppBar from './component/navBar';
-import Example from './component/carousel';
-import CenteredFooter from './component/footer';
-import RowAndColumnSpacing from './component/gridContainer';
-
+import AboutUs from './Components/aboutUs';
+import Footer from './Components/footer';
+import NewComponent from './Components/header';
 
 
 function App() {
   return (
     <div >
-      <MenuAppBar/>
+      {/* <MenuAppBar/>
       <Example/>
-      <RowAndColumnSpacing/>
-      <CenteredFooter/>
+      <WovenImageList/>
+      <CenteredFooter/> */}
+
+      {/* <Header/>
+      <AboutUs/>
+      <Footer/> */}
+
+      <NewComponent/>
+      <AboutUs/>
+      <Footer/>
      
     
     </div>
