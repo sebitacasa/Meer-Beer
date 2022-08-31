@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="ejeZfooter">
               <div className="footer-content">
                 <div className="footer-tittle">
-                  <h2>Contact Form</h2>
+                  <h2>Contactenos</h2>
                 </div>
                 <div className="formulario-content">
                   <form id="formulario">
