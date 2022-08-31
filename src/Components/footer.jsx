@@ -1,37 +1,65 @@
-import React from "react"
+import React from "react";
+import Form from "react-bootstrap/Form";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Placeholder from 'react-bootstrap/Placeholder';
 
 const Footer = () => {
-    return (
-        <div>
-            <footer className="footer">
-            <div className="deg-footer" />
-            <div className="ejeZfooter">
-              <div className="footer-content">
-                <div className="footer-tittle">
-                  <h2>Contactenos</h2>
-                </div>
-                <div className="formulario-content">
-                  <form id="formulario">
-                    <label htmlFor="user">Nombre:</label>
-                    <input type="text" id="user" name="user" placeholder="Ingresa tu Nombre" />
-                    <label htmlFor="email">Correo Electronico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingresa tu Correo Electronico" />
-                    <label htmlFor="message">Escribe tu mensaje</label>
-                    <textarea name="menssage" id="message" defaultValue={""} />
-                    <div className="send"><button>Enviar</button></div>
-                    <div className="mensaje-form">
-                      <p>Escribenos un mensaje, con gusto tendras una respuesta de parte de nosotros en muy poco tiempo.</p>
-                    </div>
-                  </form>
-                </div>
-                <div className="footer-text">
-                  <p>© Meer Beer | Todos los derechos reservados</p>
-                </div>
-              </div>
+  return (
+    <div>
+      <footer className="footer">
+        <div className="deg-footer" />
+        <div className="ejeZfooter">
+          <div className="footer-content">
+            <div className="footer-tittle">
+              <h2>Contactenos</h2>
             </div>
-          </footer>
+            <Container>
+              <Row>
+                <Col xs>
+                <Placeholder xs={6} />
+                  <Placeholder className="w-75" />{" "}
+                  <Placeholder style={{ width: "60%" }} />
+                </Col>
+                <Col xs={{ order: 12 }}>
+                  {" "}
+                  <Placeholder xs={6} />
+                  <Placeholder className="w-75" />{" "}
+                  <Placeholder style={{ width: "60%" }} />
+                </Col>
+                <Col xs={{ order: 1 }}>
+                  <Form>
+                    <Form.Group
+                      className="mb-3"
+                      controlId="exampleForm.ControlInput1"
+                    >
+                      <Form.Label>Email address</Form.Label>
+                      <Form.Control
+                        type="email"
+                        placeholder="name@example.com"
+                      />
+                    </Form.Group>
+                    <Form.Group
+                      className="mb-3"
+                      controlId="exampleForm.ControlTextarea1"
+                    >
+                      <Form.Label>Example textarea</Form.Label>
+                      <Form.Control as="textarea" rows={3} />
+                    </Form.Group>
+                  </Form>
+                </Col>
+              </Row>
+            </Container>
+
+            <div className="footer-text">
+              <p>© Meer Beer | Todos los derechos reservados</p>
+            </div>
+          </div>
         </div>
-    )
-}
+      </footer>
+    </div>
+  );
+};
 
 export default Footer;

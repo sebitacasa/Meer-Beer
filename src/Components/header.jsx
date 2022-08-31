@@ -1,5 +1,7 @@
 import React from "react"
 import img from "../images/logo2.jpeg"
+
+import Image from 'react-bootstrap/Image'
 import "./style.css"
  const NewComponent = () => {
    
@@ -12,7 +14,7 @@ import "./style.css"
           </div>
           {/* Mene de navegacion */}
           <header id="header">
-            <nav className="menu">
+            {/* <nav className="menu">
               <div className="logo-box">
                 <h1><img src={img} alt="" width={105} height={80}/></h1>
                 <span className="btn-menu"><i className="fab fa-wolf-pack-battalion" /></span>
@@ -26,7 +28,8 @@ import "./style.css"
                   <li><a href="#">Contact</a></li>
                 </ul>
               </div>
-            </nav>
+            </nav> */}
+            
             {/* Img Header */}
             <div className="img-header">
               <div className="Welcome">
