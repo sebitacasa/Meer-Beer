@@ -30,10 +30,10 @@ import "./style.css"
             {/* Img Header */}
             <div className="img-header">
               <div className="Welcome">
-                <h1>Welcome to DJs London</h1>
+                <h1>Meer Beer</h1>
                 <hr />
-                <p>DJ recruitment </p>
-                <button id="abajo">see below</button>
+                <p>Cerveza Ipa </p>
+                <button id="abajo">mas acerca </button>
               </div>
             </div>
           </header>
